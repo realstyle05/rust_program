@@ -1,0 +1,15 @@
+workspace = { members = ["jeu1", "jeu2", "jeu3", "ui"] }
+[package]
+name = "mini_hub"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+[dependencies]
+jeu1 = { path = "jeu1" }
+jeu2 = { path = "jeu2" }
+jeu3 = { path = "jeu3" }
+ui = { path = "ui" }
+rusqlite = { version = "0.31.0", features = ["bundled"] }
